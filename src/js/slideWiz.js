@@ -328,11 +328,11 @@ $.fn.slideWiz = function (e) {
 
                             slideDetailBox.css('bottom', ((slideContainerHeight - slideDetailBoxHeight) / 2));
 
-                            if (e.file[position].src.main !== false) {
+                            if (isString(e.file[position].src.main)) {
                                 $('.slide-container .main-image-box').html(
                                     getMainImage(position)
-                                ).css('top', 50);
-                            }
+                                ).show().css('top', 50);
+                            } else $('.slide-container .main-image-box').hide();
 
                             $(slideHolderChildren[(direction === FORWARD ? 0 : 1)]).detach();
 
@@ -381,11 +381,11 @@ $.fn.slideWiz = function (e) {
 
                             slideDetailBox.css('bottom', ((slideContainerHeight - slideDetailBoxHeight) / 2));
 
-                            if (e.file[position].src.main !== false) {
+                            if (isString(e.file[position].src.main)) {
                                 $('.slide-container .main-image-box').html(
                                     getMainImage(position)
-                                ).css('top', 50);
-                            }
+                                ).show().css('top', 50);
+                            } else $('.slide-container .main-image-box').hide();
 
                             $(slideHolderChildren[(direction === FORWARD ? 1 : 0)]).fadeIn(800, () => {
 
@@ -448,11 +448,11 @@ $.fn.slideWiz = function (e) {
 
                             slideDetailBox.css('bottom', ((slideContainerHeight - slideDetailBoxHeight) / 2));
 
-                            if (e.file[position].src.main !== false) {
+                            if (isString(e.file[position].src.main)) {
                                 $('.slide-container .main-image-box').html(
                                     getMainImage(position)
-                                ).css('top', 50);
-                            }
+                                ).show().css('top', 50);
+                            } else $('.slide-container .main-image-box').hide();
 
                             if (direction === BACKWARD) $(slideHolderChildren[0]).children('img').css('object-fit', 'cover');
 
@@ -524,11 +524,11 @@ $.fn.slideWiz = function (e) {
 
                             slideDetailBox.css('bottom', ((slideContainerHeight - slideDetailBoxHeight) / 2));
 
-                            if (e.file[position].src.main !== false) {
+                            if (isString(e.file[position].src.main)) {
                                 $('.slide-container .main-image-box').html(
                                     getMainImage(position)
-                                ).css('top', 50);
-                            }
+                                ).show().css('top', 50);
+                            } else $('.slide-container .main-image-box').hide();
 
                             $(slideHolderChildren[(direction === FORWARD ? 0 : 1)]).detach();
 
@@ -629,13 +629,12 @@ $.fn.slideWiz = function (e) {
 
                                     slideDetailBox.css('bottom', ((slideContainerHeight - slideDetailBoxHeight) / 2));
 
-                                    if (e.file[position].src.main !== false) {
+                                    if (isString(e.file[position].src.main)) {
 
                                         $('.slide-container .main-image-box').html(
                                             getMainImage(position)
-                                        ).css('top', 50);
-
-                                    }
+                                        ).show().css('top', 50);
+                                    } else $('.slide-container .main-image-box').hide();
 
                                     setMove(true);
                                     if (e.auto === true) xTimeout = setTimeout(initSlide, e.speed);
@@ -716,11 +715,11 @@ $.fn.slideWiz = function (e) {
 
                                     slideDetailBox.css('bottom', ((slideContainerHeight - slideDetailBoxHeight) / 2));
 
-                                    if (e.file[position].src.main !== false) {
+                                    if (isString(e.file[position].src.main)) {
                                         $('.slide-container .main-image-box').html(
                                             getMainImage(position)
-                                        ).css('top', 50);
-                                    }
+                                        ).show().css('top', 50);
+                                    } else $('.slide-container .main-image-box').hide();
 
                                     clearTimeout(timeoutX);
                                     clearTimeout(timeoutXX);
@@ -821,11 +820,11 @@ $.fn.slideWiz = function (e) {
 
                                 slideDetailBox.css('bottom', ((slideContainerHeight - slideDetailBoxHeight) / 2));
 
-                                if (e.file[position].src.main !== false) {
+                                if (isString(e.file[position].src.main)) {
                                     $('.slide-container .main-image-box').html(
                                         getMainImage(position)
-                                    ).css('top', 50);
-                                }
+                                    ).show().css('top', 50);
+                                } else $('.slide-container .main-image-box').hide();
 
                                 pixelType = (pixelType === 0 ? 1 : 0);
 
@@ -868,7 +867,7 @@ $.fn.slideWiz = function (e) {
 
         }
 
-        mainImageBoxObject.append(getMainImage(0));
+        if (isString(e.file[0].src.main)) mainImageBoxObject.append(getMainImage(0));
 
         slideDetailBoxObject.append(getDetail(0));
 
@@ -914,7 +913,8 @@ $.fn.slideWiz = function (e) {
                     detail_height = detail_box.innerHeight();
 
                 detail_box.css('bottom', ((container_height - detail_height) / 2));
-                mainImageBoxObject.css('top', 50);
+                if (isString(e.file[0].src.main)) mainImageBoxObject.show().css('top', 50);
+                else mainImageBoxObject.hide();
 
                 if (e.auto === true) {
 
