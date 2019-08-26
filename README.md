@@ -96,14 +96,11 @@ $('.slide-container').slideWiz({
 
 slideWiz accept an array of objects as a parameter, the object having four attributes each.
 
-- auto
-This attribute takes a boolean true/false, which tells slideWiz to slide automatically or not.
+- `auto` - This attribute takes a boolean true/false, which tells slideWiz to slide automatically or not.
 
-- speed
-This attribute takes milliseconds as time, specifying slideWiz' slide interval.
+- `speed` - This attribute takes milliseconds as time, specifying slideWiz' slide interval.
 
-- animation
-This attribute takes a string or an array as it's argument. Use a string to specify the animation 
+- `animation` - This attribute takes a string or an array as it's argument. Use a string to specify the animation 
 you want or an array of animation names for slideWiz to randomly choose from each time the page is loaded. 
 Currently slideWiz supports seven slide animations. 
 
@@ -115,25 +112,21 @@ Currently slideWiz supports seven slide animations.
 * slice
 * pixel
 
-- col
-This attribute is used to define the number of columns needed for animations such as flip, slice and pixel.
+- `col` - This attribute is used to define the number of columns needed for animations such as flip, slice and pixel.
 
-- row
-This attribute is used to define the number of rows needed for pixel animation
+- `row` - This attribute is used to define the number of rows needed for pixel animation
 
-file: This attribute takes an array containing objects of the slide-show content. 
+- `file` - This attribute takes an array containing objects of the slide-show content. 
 slideWiz currently accepts 5 attributes in each of these objects.
 
-- src 
-This takes the image url
+- `src` - This takes the image url
 
-- title
-This takes the slide title, if not needed use a boolean 'false'
+- `title` - This takes the slide title, if not needed use a boolean 'false'
 
-- desc
-This takes the slide description, if not needed use a boolean 'false'
+- `desc` - This takes the slide description, if not needed use a boolean 'false'
 
--button
-This takes an object with 5 attributes which defines the button, if not needed use a boolean 'false'. 
+- `button` - This takes an object with 5 attributes which defines the button, if not needed use a boolean 'false'. 
 
-However, any of the button object attributes that are not needed should also be set to false
+/**
+*However, any of the button object attributes that are not needed should also be set to false
+*/
