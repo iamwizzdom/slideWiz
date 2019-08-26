@@ -104,20 +104,20 @@ slideWiz accept an array of objects as a parameter, the object having four attri
 you want or an array of animation names for slideWiz to randomly choose from each time the page is loaded. 
 Currently slideWiz supports seven slide animations. 
 
-      - `fade`
-      - `card`
-      - `box3D`
-      - `glide`
-      - `flip`
-      - `slice`
-      - `pixel`
+      fade
+      card
+      box3D
+      glide
+      flip
+      slice`
+      pixel
 
 - `col` - This attribute is used to define the number of columns needed for animations such as flip, slice and pixel.
 
 - `row` - This attribute is used to define the number of rows needed for pixel animation
 
 - `file` - This attribute takes an array containing objects of the slide-show content. 
-slideWiz currently accepts 5 attributes in each of these objects.
+      > slideWiz currently accepts 5 attributes in each of these objects.
 
 - `src` - This takes the image url
 
