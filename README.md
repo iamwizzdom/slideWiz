@@ -103,21 +103,22 @@ slideWiz accept an array of objects as a parameter, the object having four attri
 - `animation` - This attribute takes a string or an array as it's argument. Use a string to specify the animation 
 you want or an array of animation names for slideWiz to randomly choose from each time the page is loaded. 
 Currently slideWiz supports seven slide animations. 
-
-      fade
-      card
-      box3D
-      glide
-      flip
-      slice`
-      pixel
+      1. fade
+      2. card
+      3. box3D
+      4. glide
+      5. flip
+      6. slice
+      7. pixel
 
 - `col` - This attribute is used to define the number of columns needed for animations such as flip, slice and pixel.
 
 - `row` - This attribute is used to define the number of rows needed for pixel animation
 
 - `file` - This attribute takes an array containing objects of the slide-show content. 
-      > slideWiz currently accepts 5 attributes in each of these objects.
+
+> slideWiz currently accepts 4 attributes in each of these objects as listed below.
+
 
 - `src` - This takes the image url
 
@@ -125,6 +126,9 @@ Currently slideWiz supports seven slide animations.
 
 - `desc` - This takes the slide description, if not needed use a boolean 'false'
 
-- `button` - This takes an object with 5 attributes which defines the button, if not needed use a boolean 'false'. 
+- `button` - This takes an object with 3 attributes which defines the button, if not needed use a boolean 'false'. 
+      1. text - This takes the button title
+      2. url - This takes a url you want the button to direct to when clicked
+      3. class - This takes a CSS class name
 
 > However, any of the button object attributes that are not needed should also be set to false
