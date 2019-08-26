@@ -94,7 +94,7 @@ $('.slide-container').slideWiz({
 
 <h2 id="attributes"> Attributes </h2>
 
-slideWiz accept an array of objects as a parameter, the object having four attributes each.
+> slideWiz accept an array of objects as a parameter, the object having four attributes each.
 
 - `auto` - This attribute takes a boolean true/false, which tells slideWiz to slide automatically or not.
 
