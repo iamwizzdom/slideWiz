@@ -118,7 +118,7 @@ Currently slideWiz supports seven slide animations.
 
 - `file` - This attribute takes an array containing objects of the slide-show content. 
 
-> slideWiz currently accepts 4 attributes in each of these objects as listed below.
+> slideWiz currently accepts 4 attributes in each of the file objects as listed below.
 
 
 - `src` - This takes the image url
