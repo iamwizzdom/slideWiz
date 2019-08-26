@@ -103,7 +103,8 @@ slideWiz accept an array of objects as a parameter, the object having four attri
 - `animation` - This attribute takes a string or an array as it's argument. Use a string to specify the animation 
 you want or an array of animation names for slideWiz to randomly choose from each time the page is loaded. 
 Currently slideWiz supports seven slide animations. 
-      1. fade
+     
+     1. fade
       2. card
       3. box3D
       4. glide
@@ -127,7 +128,8 @@ Currently slideWiz supports seven slide animations.
 - `desc` - This takes the slide description, if not needed use a boolean 'false'
 
 - `button` - This takes an object with 3 attributes which defines the button, if not needed use a boolean 'false'. 
-      1. text - This takes the button title
+     
+     1. text - This takes the button title
       2. url - This takes a url you want the button to direct to when clicked
       3. class - This takes a CSS class name
 
