@@ -7,7 +7,7 @@
 
 <h2 id="usage"> Usage </h2>
 
-slideWiz only wants to be bound with a html element as follows
+> slideWiz only wants to be bound with a html element as follows
 
 ```javascript 
 $('.slide-container').slideWiz({
@@ -104,13 +104,13 @@ slideWiz accept an array of objects as a parameter, the object having four attri
 you want or an array of animation names for slideWiz to randomly choose from each time the page is loaded. 
 Currently slideWiz supports seven slide animations. 
 
-* fade 
-* card 
-* box3D
-* glide
-* flip
-* slice
-* pixel
+      - `fade`
+      - `card`
+      - `box3D`
+      - `glide`
+      - `flip`
+      - `slice`
+      - `pixel`
 
 - `col` - This attribute is used to define the number of columns needed for animations such as flip, slice and pixel.
 
@@ -127,6 +127,4 @@ slideWiz currently accepts 5 attributes in each of these objects.
 
 - `button` - This takes an object with 5 attributes which defines the button, if not needed use a boolean 'false'. 
 
-/**
-*However, any of the button object attributes that are not needed should also be set to false
-*/
+> However, any of the button object attributes that are not needed should also be set to false
